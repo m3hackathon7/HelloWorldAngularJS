@@ -30,6 +30,11 @@ app.controller("IndexController", ['$timeout', function($timeout) {
     }, 0);
   }, false);
 
+  this.count = 0;
+  this.click = function() {
+    this.count = this.count + 1;
+  };
+
   console.log('angularjs controller');
 }]);
 
